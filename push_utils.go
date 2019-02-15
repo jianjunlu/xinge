@@ -33,7 +33,7 @@ func NewTokenPushMsg(platform Platform, msgType MessageType, title string, conte
 func NewAccountPushMsg(platform Platform, msgType MessageType, title string, content string, accounts ...string) IPushMsg {
 
 	msg := DefaultPushMsg(platform, msgType, title, content)
-	if len(accounts) == 0 {
+	if len(accounts) > 0 {
 		msg.RenderOptions(OptionAccountList(accounts...))
 	}
 	return msg
