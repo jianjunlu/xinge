@@ -1,1 +1,1 @@
-module jianjunlu/xinge
+module github.com/jianjunlu/xinge
